@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.png";
+import BookNowButton from "@/components/BookNowButton";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,13 +57,7 @@ const Navbar = () => {
           </li>
         ))}
         <li>
-          <Link
-            to="/schedule"
-            onClick={closeMenu}
-            className="inline-block px-7 py-3 bg-[#0099ff] text-white font-montserrat text-[0.85rem] font-bold tracking-[2px] rounded uppercase transition-all duration-300 hover:bg-[#33b1ff] hover:shadow-[0_0_25px_rgba(0,153,255,0.3)] hover:-translate-y-0.5"
-          >
-            Book Now
-          </Link>
+          <BookNowButton onClick={closeMenu} />
         </li>
       </ul>
 
