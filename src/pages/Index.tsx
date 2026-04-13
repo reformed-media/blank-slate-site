@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import RecentWork from "@/components/RecentWork";
 
 const services = [
   { icon: "☀", title: "DETAILING", desc: "Full interior and exterior restoration. Paint correction, wash & wax — your car reborn." },
@@ -68,6 +69,8 @@ const Index = () => {
           </Link>
         </div>
       </section>
+
+      <RecentWork />
 
       {/* Services */}
       <section className="bg-[#111111] py-20 px-8 max-md:py-14 max-md:px-5">
