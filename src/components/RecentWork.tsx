@@ -21,10 +21,10 @@ const RecentWork = () => {
             RECENT WORK
           </span>
           <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-normal leading-[1.2] mb-3 text-foreground">
-            Cars we've had in the bay.
+            What's been through the doors.
           </h2>
           <p className="text-muted-foreground text-[0.95rem]">
-            A few of the recent jobs. McLarens, Lamborghinis, Porsches, Audis, Ferraris.
+            Some clients. Some friends. All of them left cleaner than they came in.
           </p>
         </div>
 
