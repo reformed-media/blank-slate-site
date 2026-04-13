@@ -20,6 +20,7 @@ const services = [
     icon: "▖",
     title: "VEHICLE WRAPS",
     desc: "Transform the look of your vehicle without a permanent commitment. Our expert installers deliver flawless, bubble-free wraps that protect your original paint.",
+    image: vehicleWrapsImg,
     items: [
       "Full vehicle vinyl wraps",
       "Partial wraps and accent pieces",
