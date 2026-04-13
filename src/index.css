@@ -57,7 +57,7 @@ html {
 
 /* Hero background */
 .hero-bg {
-  background: url('/DSC06656-2.jpg') center/cover no-repeat;
+  background: url('./assets/hero-porsche.jpg') center/cover no-repeat;
 }
 
 /* Page hero gradient */
