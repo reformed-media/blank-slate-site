@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RecentWork from "@/components/RecentWork";
 import BookNowButton from "@/components/BookNowButton";
+import SeeOurWorkButton from "@/components/SeeOurWorkButton";
 
 const services = [
   { icon: "☀", title: "DETAILING", desc: "Full interior and exterior restoration. Paint correction, wash & wax — your car reborn." },
@@ -62,7 +63,10 @@ const Index = () => {
           <p className="text-[clamp(1rem,2vw,1.15rem)] font-normal italic text-[#aaaaaa] max-w-[600px] mx-auto mb-10 leading-[1.7]">
             Rediscover the brilliance of your car's finish and bring back that showroom sparkle.
           </p>
-          <BookNowButton />
+          <div className="flex flex-row gap-3 justify-center max-sm:flex-col max-sm:items-center">
+            <BookNowButton className="max-sm:w-64 max-sm:justify-center" />
+            <SeeOurWorkButton className="max-sm:w-64 max-sm:justify-center" />
+          </div>
         </div>
       </section>
 
