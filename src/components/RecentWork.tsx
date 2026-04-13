@@ -14,7 +14,7 @@ const images = [
 
 const RecentWork = () => {
   return (
-    <section className="py-20 px-8 max-md:py-14 max-md:px-5">
+    <section id="recent-work" className="py-20 px-8 max-md:py-14 max-md:px-5">
       <div className="max-w-[1200px] mx-auto">
         <div className="mb-10">
           <span className="text-primary text-[0.75rem] font-bold tracking-[3px] uppercase block mb-3">
