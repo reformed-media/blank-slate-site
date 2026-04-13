@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BookNowButton from "@/components/BookNowButton";
+import SeeOurWorkButton from "@/components/SeeOurWorkButton";
 import vehicleWrapsImg from "@/assets/vehicle-wraps.png";
 import detailingImg from "@/assets/detailing.png";
 import windowTintsImg from "@/assets/window-tints.png";
@@ -130,7 +131,10 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                <BookNowButton className="self-start" />
+                <div className="flex flex-row gap-3 max-sm:flex-col">
+                  <BookNowButton />
+                  <SeeOurWorkButton />
+                </div>
               </div>
             </div>
           ))}
