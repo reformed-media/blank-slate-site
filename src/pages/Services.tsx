@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import vehicleWrapsImg from "@/assets/vehicle-wraps.png";
+import detailingImg from "@/assets/detailing.png";
 
 const services = [
   {
     icon: "☀",
+    image: detailingImg,
     title: "DETAILING",
     desc: "Our comprehensive detailing service restores your vehicle to better-than-showroom condition. We meticulously clean, correct, and protect every surface.",
     items: [
