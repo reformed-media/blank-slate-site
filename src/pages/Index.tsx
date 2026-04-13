@@ -56,10 +56,10 @@ const Index = () => {
         <div className="absolute inset-0 bg-black/55" />
         <div className="relative z-10 max-w-[900px]">
           <h1 className="font-montserrat text-[clamp(3rem,8vw,5rem)] font-black leading-[1.1] tracking-[2px] mb-6">
-            DON'T <span className="text-[#0099ff]">BLEND IN</span> WITH TRAFFIC
+            DON'T <span className="text-[#0099ff]">BLEND IN</span> WITH TRAFFIC.
           </h1>
           <p className="text-[clamp(1rem,2vw,1.15rem)] font-normal italic text-[#aaaaaa] max-w-[600px] mx-auto mb-10 leading-[1.7]">
-            Premium detailing and customization in Mineola, NY — where every vehicle becomes a masterpiece.
+            Rediscover the brilliance of your car's finish and bring back that showroom sparkle.
           </p>
           <Link
             to="/schedule"
