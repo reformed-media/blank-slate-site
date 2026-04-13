@@ -57,7 +57,7 @@ const Navbar = () => {
           </li>
         ))}
         <li>
-          <BookNowButton onClick={closeMenu} />
+          <BookNowButton onClick={closeMenu} className="px-[20px] py-[10px] text-[14px]" />
         </li>
       </ul>
 
