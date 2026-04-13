@@ -5,6 +5,7 @@ import vehicleWrapsImg from "@/assets/vehicle-wraps.png";
 import detailingImg from "@/assets/detailing.png";
 import windowTintsImg from "@/assets/window-tints.png";
 import ppfImg from "@/assets/ppf.png";
+import customizationImg from "@/assets/vehicle-customization.png";
 
 const services = [
   {
@@ -58,6 +59,7 @@ const services = [
   },
   {
     icon: "⚙",
+    image: customizationImg,
     title: "VEHICLE CUSTOMIZATION",
     desc: "Make your ride truly one-of-a-kind. From subtle upgrades to full custom builds, we bring your vision to life with expert craftsmanship.",
     items: [
