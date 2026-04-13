@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import vehicleWrapsImg from "@/assets/vehicle-wraps.png";
 import detailingImg from "@/assets/detailing.png";
 import windowTintsImg from "@/assets/window-tints.png";
+import ppfImg from "@/assets/ppf.png";
 
 const services = [
   {
@@ -45,6 +46,7 @@ const services = [
   },
   {
     icon: "○",
+    image: ppfImg,
     title: "PAINT PROTECTION FILM (PPF)",
     desc: "Shield your paint from rock chips, scratches, and road debris with our premium paint protection film. Invisible armor that keeps your vehicle looking flawless.",
     items: [
@@ -101,7 +103,7 @@ const Services = () => {
               key={s.title}
               className="grid grid-cols-[300px_1fr] max-md:grid-cols-1 bg-[#111111] border border-[#222] rounded-2xl overflow-hidden transition-all duration-300 hover:border-[#0099ff] hover:shadow-[0_10px_40px_rgba(0,153,255,0.08)]"
             >
-              <div className="service-detail-img-bg min-h-[250px] max-md:min-h-[200px] flex items-center justify-center text-[4rem] overflow-hidden">
+              <div className="service-detail-img-bg min-h-[250px] max-md:min-h-[200px] flex items-center justify-center text-[4rem] overflow-hidden h-full">
                 {s.image ? (
                   <img src={s.image} alt={s.title} className="w-full h-full object-cover" />
                 ) : (
