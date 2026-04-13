@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import RecentWork from "@/components/RecentWork";
 import BookNowButton from "@/components/BookNowButton";
 import SeeOurWorkButton from "@/components/SeeOurWorkButton";
+import heroImage from "@/assets/hero-porsche.jpg";
 
 const services = [
   { icon: "☀", title: "DETAILING", desc: "Full interior and exterior restoration. Paint correction, wash & wax — your car reborn." },
