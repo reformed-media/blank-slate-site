@@ -201,17 +201,19 @@ const Index = () => {
               href="https://www.instagram.com/autospa_detailz"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-7 py-3 bg-[#0099ff] text-white font-montserrat text-[0.85rem] font-bold tracking-[2px] rounded uppercase transition-all duration-300 hover:bg-[#33b1ff] hover:shadow-[0_0_25px_rgba(0,153,255,0.3)] hover:-translate-y-0.5"
+              className="inline-flex items-center gap-1.5 px-[26px] py-[14px] bg-[#0099ff] text-white text-[15px] font-medium rounded-[3px] transition-all duration-300 hover:bg-[#0088e6] group"
             >
               Follow on Instagram
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
             </a>
             <a
               href="https://www.tiktok.com/@autospa.detailz"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-7 py-3 bg-transparent border-2 border-[#0099ff] text-white font-montserrat text-[0.85rem] font-bold tracking-[2px] rounded uppercase transition-all duration-300 hover:bg-[#0099ff] hover:shadow-[0_0_25px_rgba(0,153,255,0.3)] hover:-translate-y-0.5"
+              className="inline-flex items-center gap-1.5 px-[26px] py-[14px] bg-transparent border border-[#0099ff] text-white text-[15px] font-medium rounded-[3px] transition-all duration-300 hover:bg-[#0099ff] group"
             >
               Follow on TikTok
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
             </a>
           </div>
         </div>
