@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,9 +27,9 @@ const Navbar = () => {
     >
       <Link
         to="/"
-        className="font-montserrat text-[1.4rem] font-extrabold text-white tracking-[2px] hover:text-white"
+        className="flex items-center hover:opacity-90 transition-opacity"
       >
-        AUTOSPA <span className="text-[#0099ff]">DETAILZ</span>
+        <img src={logo} alt="AutoSpa Detailz" className="h-12" />
       </Link>
 
       <ul
