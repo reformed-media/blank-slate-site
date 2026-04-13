@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import vehicleWrapsImg from "@/assets/vehicle-wraps.png";
 import detailingImg from "@/assets/detailing.png";
+import windowTintsImg from "@/assets/window-tints.png";
 
 const services = [
   {
@@ -32,6 +33,7 @@ const services = [
   },
   {
     icon: "◦",
+    image: windowTintsImg,
     title: "WINDOW TINTS",
     desc: "Professional-grade window tinting for style, privacy, and UV protection. Precision cut and installed for a clean, seamless finish on any vehicle.",
     items: [
