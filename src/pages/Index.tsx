@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import RecentWork from "@/components/RecentWork";
+import BookNowButton from "@/components/BookNowButton";
 
 const services = [
   { icon: "☀", title: "DETAILING", desc: "Full interior and exterior restoration. Paint correction, wash & wax — your car reborn." },
@@ -61,12 +62,7 @@ const Index = () => {
           <p className="text-[clamp(1rem,2vw,1.15rem)] font-normal italic text-[#aaaaaa] max-w-[600px] mx-auto mb-10 leading-[1.7]">
             Rediscover the brilliance of your car's finish and bring back that showroom sparkle.
           </p>
-          <Link
-            to="/schedule"
-            className="inline-block px-7 py-3 bg-[#0099ff] text-white font-montserrat text-[0.85rem] font-bold tracking-[2px] rounded uppercase transition-all duration-300 hover:bg-[#33b1ff] hover:shadow-[0_0_25px_rgba(0,153,255,0.3)] hover:-translate-y-0.5"
-          >
-            BOOK NOW
-          </Link>
+          <BookNowButton />
         </div>
       </section>
 

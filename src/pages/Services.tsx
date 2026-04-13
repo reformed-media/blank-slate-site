@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BookNowButton from "@/components/BookNowButton";
 import vehicleWrapsImg from "@/assets/vehicle-wraps.png";
 import detailingImg from "@/assets/detailing.png";
 import windowTintsImg from "@/assets/window-tints.png";
@@ -129,12 +130,7 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                <Link
-                  to="/schedule"
-                  className="self-start inline-block px-7 py-3 bg-[#0099ff] text-white font-montserrat text-[0.85rem] font-bold tracking-[2px] rounded uppercase transition-all duration-300 hover:bg-[#33b1ff] hover:shadow-[0_0_25px_rgba(0,153,255,0.3)] hover:-translate-y-0.5"
-                >
-                  Book This Service
-                </Link>
+                <BookNowButton className="self-start" />
               </div>
             </div>
           ))}
