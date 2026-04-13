@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 
 const values = [
   { icon: "⭐", title: "PREMIUM PRODUCTS", desc: "We source and use only the highest-quality detailing products, coatings, and films to ensure your vehicle gets the treatment it deserves." },
-  { icon: "🔧", title: "EXPERT TECHNICIANS", desc: "Our team brings years of hands-on experience and specialized training to every job — from basic washes to complex custom builds." },
+  { icon: "🔧", title: "EXPERT TEAM", desc: "Our team brings years of hands-on experience and specialized training to every job — from basic washes to complex custom builds." },
   { icon: "🔎", title: "EVERY DETAIL MATTERS", desc: "We obsess over the details others miss. Every seam, every edge, every surface is treated with precision and care." },
   { icon: "📅", title: "7-DAY AVAILABILITY", desc: "Open every day from 8am to 7pm. We work around your schedule so you never have to wait to get your vehicle looking its best." },
 ];
@@ -28,10 +28,10 @@ const About = () => {
             THE <span className="text-[#0099ff]">AUTOSPA DETAILZ</span> STORY
           </h2>
           <p className="text-[#aaaaaa] text-lg leading-[1.9] mb-6 italic">
-            At Autospa Detailz, we're not just in the business of car detailing — we're driven by an unrelenting passion for excellence. Our journey began with a simple belief: every vehicle deserves to be a masterpiece on wheels.
+            We started Autospa Detailz because we love cars. That's the whole origin story. What began as a side project for two car-obsessed friends in Mineola is now a full-service detail shop trusted by daily drivers, weekend builds, and six-figure exotics alike. We treat every car the same way: like it's our own.
           </p>
           <p className="text-[#aaaaaa] text-lg leading-[1.9]">
-            Based in Mineola, NY, our skilled team is dedicated to enhancing your vehicle inside and out, delivering top-notch results for every transformation. Whether it's a full detail, a custom wrap, or ceramic coating, we treat every car like it's our own.
+            Based in Long Island, our skilled team is dedicated to enhancing your vehicle inside and out, delivering top-notch results for every transformation. Whether it's a full detail, a custom wrap, or ceramic coating, we treat every car like it's our own.
           </p>
         </div>
       </section>

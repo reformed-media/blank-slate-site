@@ -81,7 +81,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center pt-10 mt-10 border-t border-[#1a1a1a] text-[#aaaaaa] text-[0.85rem] max-w-[1200px] mx-auto">
-        <p>&copy; 2025 Autospa Detailz. All rights reserved.</p>
+        <p>&copy; 2026 Autospa Detailz. All rights reserved.</p>
       </div>
     </footer>
   );
