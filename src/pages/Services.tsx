@@ -6,6 +6,7 @@ import detailingImg from "@/assets/detailing.png";
 import windowTintsImg from "@/assets/window-tints.png";
 import ppfImg from "@/assets/ppf.png";
 import customizationImg from "@/assets/vehicle-customization.png";
+import ceramicCoatingImg from "@/assets/ceramic-coating.png";
 
 const services = [
   {
@@ -72,6 +73,7 @@ const services = [
   },
   {
     icon: "❖",
+    image: ceramicCoatingImg,
     title: "CERAMIC COATING",
     desc: "The ultimate paint protection. Our ceramic coatings bond at the molecular level to create a hydrophobic barrier that keeps your vehicle cleaner, longer.",
     items: [
