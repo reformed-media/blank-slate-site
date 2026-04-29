@@ -10,6 +10,11 @@ import About from "./pages/About.tsx";
 import Contact from "./pages/Contact.tsx";
 import Schedule from "./pages/Schedule.tsx";
 import Consultation from "./pages/Consultation.tsx";
+import PPF from "./pages/services/PPF.tsx";
+import Ceramic from "./pages/services/Ceramic.tsx";
+import PaintCorrection from "./pages/services/PaintCorrection.tsx";
+import Detail from "./pages/services/Detail.tsx";
+import Tints from "./pages/services/Tints.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -29,9 +34,15 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/ppf" element={<PPF />} />
+          <Route path="/services/ceramic" element={<Ceramic />} />
+          <Route path="/services/paint-correction" element={<PaintCorrection />} />
+          <Route path="/services/detail" element={<Detail />} />
+          <Route path="/services/tints" element={<Tints />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/schedule" element={<Schedule />} />
+          <Route path="/book" element={<Schedule />} />
           <Route path="/consultation" element={<Consultation />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
