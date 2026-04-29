@@ -3,10 +3,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const contactCards = [
-  { icon: "📞", title: "PHONE", content: <a href="tel:9172519317" className="text-[#aaaaaa] hover:text-[#C9A961]">(917) 251-9317</a> },
-  { icon: "✉", title: "EMAIL", content: <a href="mailto:info@autospadetailz.com" className="text-[#aaaaaa] hover:text-[#C9A961]">info@autospadetailz.com</a> },
-  { icon: "📍", title: "ADDRESS", content: <span>Mineola, North Hempstead, NY</span> },
-  { icon: "🕓", title: "HOURS", content: <span>8:00 AM – 7:00 PM<br />7 Days a Week</span> },
+  { icon: "📞", title: "Phone", content: <a href="tel:9172519317" className="text-[#aaaaaa] hover:text-[#C9A961]">(917) 251-9317</a> },
+  { icon: "✉", title: "Email", content: <a href="mailto:info@autospadetailz.com" className="text-[#aaaaaa] hover:text-[#C9A961]">info@autospadetailz.com</a> },
+  { icon: "📍", title: "Address", content: <span>Mineola, North Hempstead, NY</span> },
+  { icon: "🕓", title: "Hours", content: <span>8:00 AM – 7:00 PM<br />7 Days a Week</span> },
 ];
 
 const Contact = () => {
@@ -24,10 +24,9 @@ const Contact = () => {
       <Navbar />
 
       <section className="page-hero-gradient page-hero-radial relative pt-32 pb-16 px-8 text-center">
-        <h1 className="font-inter text-[clamp(2.2rem,6vw,3.5rem)] font-black tracking-[4px] relative">
-          GET IN <span className="text-[#C9A961]">TOUCH</span>
+        <h1 className="font-fraunces text-[clamp(2.2rem,6vw,3.5rem)] font-medium tracking-[-0.01em] relative mb-6">
+          Get in <span className="text-[#C9A961]">touch</span>
         </h1>
-        <div className="w-[60px] h-[3px] bg-[#C9A961] mx-auto mb-8 mt-4" />
         <p className="text-[#aaaaaa] max-w-[600px] mx-auto relative text-lg">
           We'd love to hear from you. Reach out anytime — we're here 7 days a week.
         </p>
@@ -43,7 +42,7 @@ const Contact = () => {
                 className="bg-[#111111] border border-[#222] rounded-xl p-8 text-center transition-all duration-300 hover:border-[#333] hover:-translate-y-[3px] hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)]"
               >
                 <div className="text-[2rem] mb-4">{c.icon}</div>
-                <h3 className="font-inter text-base font-bold tracking-[2px] mb-2">{c.title}</h3>
+                <h3 className="font-fraunces text-base font-medium tracking-[-0.01em] mb-2">{c.title}</h3>
                 <p className="text-[#aaaaaa] text-[0.95rem]">{c.content}</p>
               </div>
             ))}
@@ -52,8 +51,8 @@ const Contact = () => {
           {/* Form + Map Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="font-inter text-[1.6rem] font-extrabold tracking-[2px] mb-6">
-                SEND US A <span className="text-[#C9A961]">MESSAGE</span>
+              <h2 className="font-fraunces text-[1.6rem] font-medium tracking-[-0.01em] mb-6">
+                Send us a <span className="text-[#C9A961]">message</span>
               </h2>
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
@@ -145,8 +144,8 @@ const Contact = () => {
             </div>
 
             <div>
-              <h2 className="font-inter text-[1.6rem] font-extrabold tracking-[2px] mb-6">
-                FIND <span className="text-[#C9A961]">US</span>
+              <h2 className="font-fraunces text-[1.6rem] font-medium tracking-[-0.01em] mb-6">
+                Find <span className="text-[#C9A961]">us</span>
               </h2>
               <div className="rounded-xl overflow-hidden border border-[#222] map-filter">
                 <iframe
