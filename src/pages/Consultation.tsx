@@ -1,30 +1,27 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const Schedule = () => {
+const Consultation = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
 
       <section className="page-hero-gradient page-hero-radial relative pt-32 pb-12 px-8 text-center">
         <h1 className="font-fraunces text-[clamp(2.2rem,6vw,3.5rem)] font-medium tracking-[-0.01em] relative mb-6">
-          Book your <span className="text-[#C9A961]">appointment</span>
+          Book a free <span className="text-[#C9A961]">consultation</span>
         </h1>
-        <p className="text-[#aaaaaa] max-w-[600px] mx-auto relative text-lg">
-          Ready to transform your vehicle? Book online or give us a call.
+        <p className="text-text-secondary max-w-[600px] mx-auto relative text-lg font-inter">
+          Tell us about your build. We'll walk through your goals, recommend the right protection package, and give you a clear quote — no pressure.
         </p>
       </section>
 
-      <section id="booking" className="py-12 px-8 pb-8 max-md:py-8 max-md:px-5">
+      <section id="consultation" className="py-12 px-8 pb-8 max-md:py-8 max-md:px-5">
         <div className="max-w-[1000px] mx-auto">
-          <h2 className="font-fraunces text-[clamp(1.6rem,4vw,2.2rem)] font-medium text-center tracking-[-0.01em] mt-4 mb-12">
-            Book your <span className="text-[#C9A961]">detail</span>
-          </h2>
-          {/* TODO: Replace with GHL Calendar 2 iframe embed for detail bookings. */}
+          {/* TODO: Replace with GHL Calendar 1 iframe embed for free consultations. */}
           <div className="min-h-[700px] bg-background-secondary border border-border-subtle rounded-lg p-8 flex flex-col items-center justify-center text-center">
-            <p className="text-text-secondary text-xs font-mono uppercase tracking-wider mb-3">[ GHL Calendar Embed — Detail Booking ]</p>
-            <p className="text-text-primary font-medium mb-2">Booking calendar will load here</p>
-            <p className="text-text-secondary text-sm max-w-md">Replace with the GHL Calendar 2 (detail booking) iframe embed code.</p>
+            <p className="text-text-secondary text-xs font-mono uppercase tracking-wider mb-3">[ GHL Calendar Embed — Free Consultation ]</p>
+            <p className="text-text-primary font-medium mb-2">Consultation calendar will load here</p>
+            <p className="text-text-secondary text-sm max-w-md">Replace with the GHL Calendar 1 (free consultation) iframe embed code.</p>
           </div>
         </div>
       </section>
@@ -63,4 +60,4 @@ const Schedule = () => {
   );
 };
 
-export default Schedule;
+export default Consultation;

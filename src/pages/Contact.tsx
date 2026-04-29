@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -10,15 +9,6 @@ const contactCards = [
 ];
 
 const Contact = () => {
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setSubmitted(true);
-    (e.target as HTMLFormElement).reset();
-    setTimeout(() => setSubmitted(false), 3000);
-  };
-
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -54,73 +44,12 @@ const Contact = () => {
               <h2 className="font-fraunces text-[1.6rem] font-medium tracking-[-0.01em] mb-6">
                 Send us a <span className="text-[#C9A961]">message</span>
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div>
-                  <label className="block text-[0.85rem] text-[#aaaaaa] mb-1.5 font-medium uppercase tracking-[1px]">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Your full name"
-                    required
-                    className="w-full px-4 py-3.5 bg-[#161616] border border-[#222] rounded-lg text-white font-inter text-[0.95rem] outline-none transition-colors duration-300 focus:border-[#C9A961] focus:shadow-[0_0_10px_rgba(201,169,97,0.1)]"
-                  />
-                </div>
-                <div>
-                  <label className="block text-[0.85rem] text-[#aaaaaa] mb-1.5 font-medium uppercase tracking-[1px]">
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    placeholder="(555) 555-5555"
-                    className="w-full px-4 py-3.5 bg-[#161616] border border-[#222] rounded-lg text-white font-inter text-[0.95rem] outline-none transition-colors duration-300 focus:border-[#C9A961] focus:shadow-[0_0_10px_rgba(201,169,97,0.1)]"
-                  />
-                </div>
-                <div>
-                  <label className="block text-[0.85rem] text-[#aaaaaa] mb-1.5 font-medium uppercase tracking-[1px]">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    placeholder="you@email.com"
-                    required
-                    className="w-full px-4 py-3.5 bg-[#161616] border border-[#222] rounded-lg text-white font-inter text-[0.95rem] outline-none transition-colors duration-300 focus:border-[#C9A961] focus:shadow-[0_0_10px_rgba(201,169,97,0.1)]"
-                  />
-                </div>
-                <div>
-                  <label className="block text-[0.85rem] text-[#aaaaaa] mb-1.5 font-medium uppercase tracking-[1px]">
-                    Service Interested In
-                  </label>
-                  <select className="custom-select w-full px-4 py-3.5 bg-[#161616] border border-[#222] rounded-lg text-white font-inter text-[0.95rem] outline-none cursor-pointer transition-colors duration-300 focus:border-[#C9A961] focus:shadow-[0_0_10px_rgba(201,169,97,0.1)]">
-                    <option value="" className="bg-[#111111]">Select a service</option>
-                    <option value="detailing" className="bg-[#111111]">Detailing</option>
-                    <option value="vehicle-wraps" className="bg-[#111111]">Vehicle Wraps</option>
-                    <option value="window-tints" className="bg-[#111111]">Window Tints</option>
-                    <option value="paint-protection" className="bg-[#111111]">Paint Protection Film (PPF)</option>
-                    <option value="customization" className="bg-[#111111]">Vehicle Customization</option>
-                    <option value="ceramic-coating" className="bg-[#111111]">Ceramic Coating</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-[0.85rem] text-[#aaaaaa] mb-1.5 font-medium uppercase tracking-[1px]">
-                    Message
-                  </label>
-                  <textarea
-                    placeholder="Tell us about your project..."
-                    className="w-full px-4 py-3.5 bg-[#161616] border border-[#222] rounded-lg text-white font-inter text-[0.95rem] outline-none resize-y min-h-[120px] transition-colors duration-300 focus:border-[#C9A961] focus:shadow-[0_0_10px_rgba(201,169,97,0.1)]"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className={`w-full px-7 py-3 font-inter text-[0.85rem] font-bold tracking-[2px] rounded uppercase transition-all duration-300 text-white ${
-                    submitted
-                      ? "bg-[#22c55e]"
-                      : "bg-[#C9A961] hover:bg-[#D4B873] hover:shadow-[0_0_25px_rgba(201,169,97,0.3)] hover:-translate-y-0.5"
-                  }`}
-                >
-                  {submitted ? "MESSAGE SENT!" : "SEND MESSAGE"}
-                </button>
-              </form>
+              {/* TODO: Replace with GHL contact form iframe embed. Form must include UTM hidden fields populated from sessionStorage (see src/lib/tracking.ts captureUTMs). */}
+              <div className="min-h-[600px] bg-background-secondary border border-border-subtle rounded-lg p-8 flex flex-col items-center justify-center text-center">
+                <p className="text-text-secondary text-xs font-mono uppercase tracking-wider mb-3">[ GHL Form Embed ]</p>
+                <p className="text-text-primary font-medium mb-2">Contact form will load here</p>
+                <p className="text-text-secondary text-sm max-w-md">Replace this entire div with the GHL form iframe embed code once the sub-account is provisioned. The form must include hidden UTM fields populated from sessionStorage.</p>
+              </div>
               <div className="flex gap-4 mt-8">
                 <a
                   href="https://www.instagram.com/autospa_detailz"
