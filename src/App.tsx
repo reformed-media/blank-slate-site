@@ -15,6 +15,11 @@ import Ceramic from "./pages/services/Ceramic.tsx";
 import PaintCorrection from "./pages/services/PaintCorrection.tsx";
 import Detail from "./pages/services/Detail.tsx";
 import Tints from "./pages/services/Tints.tsx";
+import Portfolio from "./pages/Portfolio.tsx";
+import PortfolioMake from "./pages/PortfolioMake.tsx";
+import Reviews from "./pages/Reviews.tsx";
+import Privacy from "./pages/Privacy.tsx";
+import Terms from "./pages/Terms.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -44,6 +49,11 @@ const App = () => (
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/book" element={<Schedule />} />
           <Route path="/consultation" element={<Consultation />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/:make" element={<PortfolioMake />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
