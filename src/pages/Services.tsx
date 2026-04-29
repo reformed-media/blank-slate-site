@@ -15,6 +15,7 @@ const services = [
     icon: "☀",
     image: detailingImg,
     title: "Detailing",
+    href: "/services/detail",
     desc: "Our comprehensive detailing service restores your vehicle to better-than-showroom condition. We meticulously clean, correct, and protect every surface.",
     items: [
       "Interior deep cleaning and conditioning",
@@ -27,6 +28,7 @@ const services = [
   {
     icon: "▖",
     title: "Vehicle Wraps",
+    href: null,
     desc: "Transform the look of your vehicle without a permanent commitment. Our expert installers deliver flawless, bubble-free wraps that protect your original paint.",
     image: vehicleWrapsImg,
     items: [
@@ -40,6 +42,7 @@ const services = [
     icon: "◦",
     image: windowTintsImg,
     title: "Window Tints",
+    href: "/services/tints",
     desc: "Professional-grade window tinting for style, privacy, and UV protection. Precision cut and installed for a clean, seamless finish on any vehicle.",
     items: [
       "Precision tinting for all vehicle types",
@@ -52,6 +55,7 @@ const services = [
     icon: "○",
     image: ppfImg,
     title: "Paint Protection Film (PPF)",
+    href: "/services/ppf",
     desc: "Shield your paint from rock chips, scratches, and road debris with our premium paint protection film. Invisible armor that keeps your vehicle looking flawless.",
     items: [
       "Clear bra installation",
@@ -64,6 +68,7 @@ const services = [
     icon: "⚙",
     image: customizationImg,
     title: "Vehicle Customization",
+    href: null,
     desc: "Make your ride truly one-of-a-kind. From subtle upgrades to full custom builds, we bring your vision to life with expert craftsmanship.",
     items: [
       "Body kits and aftermarket installations",
@@ -77,12 +82,25 @@ const services = [
     icon: "❖",
     image: ceramicCoatingImg,
     title: "Ceramic Coating",
+    href: "/services/ceramic",
     desc: "The ultimate paint protection. Our ceramic coatings bond at the molecular level to create a hydrophobic barrier that keeps your vehicle cleaner, longer.",
     items: [
       "Long-lasting nano-ceramic protection",
       "Hydrophobic water-repelling finish",
       "Showroom shine for years",
       "Easier maintenance and cleaning",
+    ],
+  },
+  {
+    icon: "✦",
+    title: "Paint Correction",
+    href: "/services/paint-correction",
+    desc: "Multi-step machine polishing that removes swirls, scratches, and oxidation to restore your paint's true depth and clarity.",
+    items: [
+      "1-step refresh",
+      "2-step swirl and scratch removal",
+      "3-step heavy correction",
+      "Prep work for ceramic coating",
     ],
   },
 ];
@@ -131,7 +149,17 @@ const Services = () => {
                   ))}
                 </ul>
                 <div className="flex flex-row gap-3 max-sm:flex-col">
-                  <BookNowButton />
+                  {s.href ? (
+                    <Link
+                      to={s.href}
+                      className="inline-flex items-center gap-1.5 px-[26px] py-[14px] bg-[#C9A961] text-[#0A0A0A] text-[15px] font-medium rounded-[3px] transition-all duration-300 hover:bg-[#D4B873] group"
+                    >
+                      Learn more
+                      <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
+                    </Link>
+                  ) : (
+                    <BookNowButton />
+                  )}
                   <SeeOurWorkButton />
                 </div>
               </div>
