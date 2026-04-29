@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#111111] border-t-[3px] border-[#C9A961] pt-16 px-8 pb-8">
+    <footer className="bg-[#111111] border-t border-[#2A2A2A] pt-16 px-8 pb-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
         <div>
-          <h4 className="font-inter text-base font-bold tracking-[2px] mb-5 text-white">
-            QUICK LINKS
+          <h4 className="font-fraunces text-base font-medium tracking-[-0.01em] mb-5 text-white">
+            Quick Links
           </h4>
           <ul className="list-none space-y-2">
             {[
@@ -29,8 +29,8 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="font-inter text-base font-bold tracking-[2px] mb-5 text-white">
-            CONTACT
+          <h4 className="font-fraunces text-base font-medium tracking-[-0.01em] mb-5 text-white">
+            Contact
           </h4>
           <p className="text-[#aaaaaa] text-[0.9rem] mb-2">
             <a href="tel:9172519317" className="text-[#aaaaaa] hover:text-[#C9A961]">
@@ -49,8 +49,8 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="font-inter text-base font-bold tracking-[2px] mb-5 text-white">
-            HOURS & SOCIAL
+          <h4 className="font-fraunces text-base font-medium tracking-[-0.01em] mb-5 text-white">
+            Hours & Social
           </h4>
           <p className="text-[#aaaaaa] text-[0.9rem] mb-3">
             Open 7 Days a Week
