@@ -18,7 +18,8 @@ const sections = [
   },
   {
     title: "SMS Communications and Consent",
-    body: "By providing your phone number, you consent to receive transactional SMS messages from AutoSpa Detailz related to your appointments. Message frequency varies. Reply STOP to opt out at any time, or HELP for support. Standard message and data rates may apply.",
+    body: "By providing your phone number and opting in, you agree to receive recurring automated marketing and informational text messages from Auto Spa Detailz. Consent is not a condition of any purchase. Message and data rates may apply. Reply STOP to opt out, HELP for help. View our Privacy Policy for information about how we handle your data.",
+    finalized: true,
   },
   {
     title: "Pricing and Payment",
@@ -65,9 +66,11 @@ const Terms = () => {
               <h2 className="font-fraunces text-[1.4rem] font-medium tracking-[-0.01em] mb-3 text-text-primary">
                 {s.title}
               </h2>
-              <p className="font-inter text-text-secondary text-sm italic mb-3">
-                [Placeholder — replace with finalized language.]
-              </p>
+              {!("finalized" in s && s.finalized) && (
+                <p className="font-inter text-text-secondary text-sm italic mb-3">
+                  [Placeholder — replace with finalized language.]
+                </p>
+              )}
               <p className="font-inter text-text-primary text-[1rem] leading-[1.75]">
                 {s.body}
               </p>
