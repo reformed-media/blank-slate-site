@@ -13,7 +13,8 @@ const sections = [
   },
   {
     title: "SMS Communications",
-    body: "If you opt in, we send appointment confirmations and reminders by SMS. Message frequency varies. Reply STOP to opt out at any time. Reply HELP for assistance. Standard message and data rates may apply.",
+    body: "When you provide your phone number and consent to receive text messages, we use it to send marketing messages, appointment confirmations, service reminders, and customer service communications. We do not share your phone number with third parties for marketing purposes. Message frequency varies. Standard message and data rates apply. You can opt out at any time by replying STOP to any message.",
+    finalized: true,
   },
   {
     title: "Cookies and Tracking Technologies (Meta Pixel, Google Analytics)",
@@ -64,9 +65,11 @@ const Privacy = () => {
               <h2 className="font-fraunces text-[1.4rem] font-medium tracking-[-0.01em] mb-3 text-text-primary">
                 {s.title}
               </h2>
-              <p className="font-inter text-text-secondary text-sm italic mb-3">
-                [Placeholder — replace with finalized language.]
-              </p>
+              {!("finalized" in s && s.finalized) && (
+                <p className="font-inter text-text-secondary text-sm italic mb-3">
+                  [Placeholder — replace with finalized language.]
+                </p>
+              )}
               <p className="font-inter text-text-primary text-[1rem] leading-[1.75]">
                 {s.body}
               </p>
