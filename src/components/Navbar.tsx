@@ -57,6 +57,17 @@ const Navbar = () => {
           </li>
         ))}
         <li>
+          <Link
+            to="/consultation"
+            onClick={closeMenu}
+            className={`text-[0.85rem] font-medium transition-colors duration-300 ${
+              isActive("/consultation") ? "text-white" : "text-[#aaaaaa] hover:text-white"
+            }`}
+          >
+            Free Consultation
+          </Link>
+        </li>
+        <li>
           <BookNowButton onClick={closeMenu} className="px-[20px] py-[10px] text-[14px]" />
         </li>
       </ul>
