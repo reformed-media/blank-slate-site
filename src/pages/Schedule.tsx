@@ -1,20 +1,7 @@
-import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const GHL_CALENDAR_ID = "RYy3OfHypkhzywcvBYqi";
-
 const Schedule = () => {
-  useEffect(() => {
-    if (!document.getElementById("ghl-form-embed-script")) {
-      const script = document.createElement("script");
-      script.id = "ghl-form-embed-script";
-      script.src = "https://link.msgsndr.com/js/form_embed.js";
-      script.type = "text/javascript";
-      document.body.appendChild(script);
-    }
-  }, []);
-
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -33,14 +20,11 @@ const Schedule = () => {
           <h2 className="font-fraunces text-[clamp(1.6rem,4vw,2.2rem)] font-medium text-center tracking-[-0.01em] mt-4 mb-12">
             Book your <span className="text-[#C9A961]">detail</span>
           </h2>
-          <div className="bg-[#111111] border border-[#222] rounded-xl overflow-hidden p-4 max-md:p-2">
-            <iframe
-              src={`https://api.leadconnectorhq.com/widget/booking/${GHL_CALENDAR_ID}`}
-              style={{ width: "100%", border: "none", overflow: "hidden" }}
-              scrolling="no"
-              id={`${GHL_CALENDAR_ID}_booking`}
-              title="Book an appointment with Autospa Detailz"
-            />
+          {/* TODO: Replace with GHL Calendar 2 iframe embed for detail bookings. */}
+          <div className="min-h-[700px] bg-background-secondary border border-border-subtle rounded-lg p-8 flex flex-col items-center justify-center text-center">
+            <p className="text-text-secondary text-xs font-mono uppercase tracking-wider mb-3">[ GHL Calendar Embed — Detail Booking ]</p>
+            <p className="text-text-primary font-medium mb-2">Booking calendar will load here</p>
+            <p className="text-text-secondary text-sm max-w-md">Replace with the GHL Calendar 2 (detail booking) iframe embed code.</p>
           </div>
         </div>
       </section>
