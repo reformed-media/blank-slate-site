@@ -14,7 +14,7 @@ const services = [
   {
     icon: "☀",
     image: detailingImg,
-    title: "DETAILING",
+    title: "Detailing",
     desc: "Our comprehensive detailing service restores your vehicle to better-than-showroom condition. We meticulously clean, correct, and protect every surface.",
     items: [
       "Interior deep cleaning and conditioning",
@@ -26,7 +26,7 @@ const services = [
   },
   {
     icon: "▖",
-    title: "VEHICLE WRAPS",
+    title: "Vehicle Wraps",
     desc: "Transform the look of your vehicle without a permanent commitment. Our expert installers deliver flawless, bubble-free wraps that protect your original paint.",
     image: vehicleWrapsImg,
     items: [
@@ -39,7 +39,7 @@ const services = [
   {
     icon: "◦",
     image: windowTintsImg,
-    title: "WINDOW TINTS",
+    title: "Window Tints",
     desc: "Professional-grade window tinting for style, privacy, and UV protection. Precision cut and installed for a clean, seamless finish on any vehicle.",
     items: [
       "Precision tinting for all vehicle types",
@@ -51,7 +51,7 @@ const services = [
   {
     icon: "○",
     image: ppfImg,
-    title: "PAINT PROTECTION FILM (PPF)",
+    title: "Paint Protection Film (PPF)",
     desc: "Shield your paint from rock chips, scratches, and road debris with our premium paint protection film. Invisible armor that keeps your vehicle looking flawless.",
     items: [
       "Clear bra installation",
@@ -63,7 +63,7 @@ const services = [
   {
     icon: "⚙",
     image: customizationImg,
-    title: "VEHICLE CUSTOMIZATION",
+    title: "Vehicle Customization",
     desc: "Make your ride truly one-of-a-kind. From subtle upgrades to full custom builds, we bring your vision to life with expert craftsmanship.",
     items: [
       "Body kits and aftermarket installations",
@@ -76,7 +76,7 @@ const services = [
   {
     icon: "❖",
     image: ceramicCoatingImg,
-    title: "CERAMIC COATING",
+    title: "Ceramic Coating",
     desc: "The ultimate paint protection. Our ceramic coatings bond at the molecular level to create a hydrophobic barrier that keeps your vehicle cleaner, longer.",
     items: [
       "Long-lasting nano-ceramic protection",
@@ -93,10 +93,9 @@ const Services = () => {
       <Navbar />
 
       <section className="page-hero-gradient page-hero-radial relative pt-32 pb-16 px-8 text-center">
-        <h1 className="font-inter text-[clamp(2.2rem,6vw,3.5rem)] font-black tracking-[4px] relative">
-          OUR <span className="text-[#C9A961]">SERVICES</span>
+        <h1 className="font-fraunces text-[clamp(2.2rem,6vw,3.5rem)] font-medium tracking-[-0.01em] relative mb-6">
+          <span className="text-[#C9A961]">Services</span>
         </h1>
-        <div className="w-[60px] h-[3px] bg-[#C9A961] mx-auto mb-8 mt-4" />
         <p className="text-[#aaaaaa] max-w-[600px] mx-auto relative text-lg">
           Premium detailing and customization services to make your vehicle stand out.
         </p>
@@ -117,7 +116,7 @@ const Services = () => {
                 )}
               </div>
               <div className="p-10 flex flex-col justify-center">
-                <h2 className="font-inter text-[1.6rem] font-extrabold tracking-[2px] mb-4">
+                <h2 className="font-fraunces text-[1.6rem] font-medium tracking-[-0.01em] mb-4">
                   {s.title}
                 </h2>
                 <p className="text-[#aaaaaa] mb-4 leading-[1.8]">{s.desc}</p>
