@@ -3,10 +3,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const contactCards = [
-  { icon: "📞", title: "PHONE", content: <a href="tel:9172519317" className="text-[#aaaaaa] hover:text-[#0099ff]">(917) 251-9317</a> },
-  { icon: "✉", title: "EMAIL", content: <a href="mailto:info@autospadetailz.com" className="text-[#aaaaaa] hover:text-[#0099ff]">info@autospadetailz.com</a> },
-  { icon: "📍", title: "ADDRESS", content: <span>Mineola, North Hempstead, NY</span> },
-  { icon: "🕓", title: "HOURS", content: <span>8:00 AM – 7:00 PM<br />7 Days a Week</span> },
+  { icon: "📞", title: "Phone", content: <a href="tel:9172519317" className="text-[#aaaaaa] hover:text-[#C9A961]">(917) 251-9317</a> },
+  { icon: "✉", title: "Email", content: <a href="mailto:info@autospadetailz.com" className="text-[#aaaaaa] hover:text-[#C9A961]">info@autospadetailz.com</a> },
+  { icon: "📍", title: "Address", content: <span>Mineola, North Hempstead, NY</span> },
+  { icon: "🕓", title: "Hours", content: <span>8:00 AM – 7:00 PM<br />7 Days a Week</span> },
 ];
 
 const Contact = () => {
@@ -24,10 +24,9 @@ const Contact = () => {
       <Navbar />
 
       <section className="page-hero-gradient page-hero-radial relative pt-32 pb-16 px-8 text-center">
-        <h1 className="font-montserrat text-[clamp(2.2rem,6vw,3.5rem)] font-black tracking-[4px] relative">
-          GET IN <span className="text-[#0099ff]">TOUCH</span>
+        <h1 className="font-fraunces text-[clamp(2.2rem,6vw,3.5rem)] font-medium tracking-[-0.01em] relative mb-6">
+          Get in <span className="text-[#C9A961]">touch</span>
         </h1>
-        <div className="w-[60px] h-[3px] bg-[#0099ff] mx-auto mb-8 mt-4" />
         <p className="text-[#aaaaaa] max-w-[600px] mx-auto relative text-lg">
           We'd love to hear from you. Reach out anytime — we're here 7 days a week.
         </p>
@@ -43,7 +42,7 @@ const Contact = () => {
                 className="bg-[#111111] border border-[#222] rounded-xl p-8 text-center transition-all duration-300 hover:border-[#333] hover:-translate-y-[3px] hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)]"
               >
                 <div className="text-[2rem] mb-4">{c.icon}</div>
-                <h3 className="font-montserrat text-base font-bold tracking-[2px] mb-2">{c.title}</h3>
+                <h3 className="font-fraunces text-base font-medium tracking-[-0.01em] mb-2">{c.title}</h3>
                 <p className="text-[#aaaaaa] text-[0.95rem]">{c.content}</p>
               </div>
             ))}
@@ -52,8 +51,8 @@ const Contact = () => {
           {/* Form + Map Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="font-montserrat text-[1.6rem] font-extrabold tracking-[2px] mb-6">
-                SEND US A <span className="text-[#0099ff]">MESSAGE</span>
+              <h2 className="font-fraunces text-[1.6rem] font-medium tracking-[-0.01em] mb-6">
+                Send us a <span className="text-[#C9A961]">message</span>
               </h2>
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
@@ -64,7 +63,7 @@ const Contact = () => {
                     type="text"
                     placeholder="Your full name"
                     required
-                    className="w-full px-4 py-3.5 bg-[#161616] border border-[#222] rounded-lg text-white font-montserrat text-[0.95rem] outline-none transition-colors duration-300 focus:border-[#0099ff] focus:shadow-[0_0_10px_rgba(0,153,255,0.1)]"
+                    className="w-full px-4 py-3.5 bg-[#161616] border border-[#222] rounded-lg text-white font-inter text-[0.95rem] outline-none transition-colors duration-300 focus:border-[#C9A961] focus:shadow-[0_0_10px_rgba(201,169,97,0.1)]"
                   />
                 </div>
                 <div>
@@ -74,7 +73,7 @@ const Contact = () => {
                   <input
                     type="tel"
                     placeholder="(555) 555-5555"
-                    className="w-full px-4 py-3.5 bg-[#161616] border border-[#222] rounded-lg text-white font-montserrat text-[0.95rem] outline-none transition-colors duration-300 focus:border-[#0099ff] focus:shadow-[0_0_10px_rgba(0,153,255,0.1)]"
+                    className="w-full px-4 py-3.5 bg-[#161616] border border-[#222] rounded-lg text-white font-inter text-[0.95rem] outline-none transition-colors duration-300 focus:border-[#C9A961] focus:shadow-[0_0_10px_rgba(201,169,97,0.1)]"
                   />
                 </div>
                 <div>
@@ -85,14 +84,14 @@ const Contact = () => {
                     type="email"
                     placeholder="you@email.com"
                     required
-                    className="w-full px-4 py-3.5 bg-[#161616] border border-[#222] rounded-lg text-white font-montserrat text-[0.95rem] outline-none transition-colors duration-300 focus:border-[#0099ff] focus:shadow-[0_0_10px_rgba(0,153,255,0.1)]"
+                    className="w-full px-4 py-3.5 bg-[#161616] border border-[#222] rounded-lg text-white font-inter text-[0.95rem] outline-none transition-colors duration-300 focus:border-[#C9A961] focus:shadow-[0_0_10px_rgba(201,169,97,0.1)]"
                   />
                 </div>
                 <div>
                   <label className="block text-[0.85rem] text-[#aaaaaa] mb-1.5 font-medium uppercase tracking-[1px]">
                     Service Interested In
                   </label>
-                  <select className="custom-select w-full px-4 py-3.5 bg-[#161616] border border-[#222] rounded-lg text-white font-montserrat text-[0.95rem] outline-none cursor-pointer transition-colors duration-300 focus:border-[#0099ff] focus:shadow-[0_0_10px_rgba(0,153,255,0.1)]">
+                  <select className="custom-select w-full px-4 py-3.5 bg-[#161616] border border-[#222] rounded-lg text-white font-inter text-[0.95rem] outline-none cursor-pointer transition-colors duration-300 focus:border-[#C9A961] focus:shadow-[0_0_10px_rgba(201,169,97,0.1)]">
                     <option value="" className="bg-[#111111]">Select a service</option>
                     <option value="detailing" className="bg-[#111111]">Detailing</option>
                     <option value="vehicle-wraps" className="bg-[#111111]">Vehicle Wraps</option>
@@ -108,15 +107,15 @@ const Contact = () => {
                   </label>
                   <textarea
                     placeholder="Tell us about your project..."
-                    className="w-full px-4 py-3.5 bg-[#161616] border border-[#222] rounded-lg text-white font-montserrat text-[0.95rem] outline-none resize-y min-h-[120px] transition-colors duration-300 focus:border-[#0099ff] focus:shadow-[0_0_10px_rgba(0,153,255,0.1)]"
+                    className="w-full px-4 py-3.5 bg-[#161616] border border-[#222] rounded-lg text-white font-inter text-[0.95rem] outline-none resize-y min-h-[120px] transition-colors duration-300 focus:border-[#C9A961] focus:shadow-[0_0_10px_rgba(201,169,97,0.1)]"
                   />
                 </div>
                 <button
                   type="submit"
-                  className={`w-full px-7 py-3 font-montserrat text-[0.85rem] font-bold tracking-[2px] rounded uppercase transition-all duration-300 text-white ${
+                  className={`w-full px-7 py-3 font-inter text-[0.85rem] font-bold tracking-[2px] rounded uppercase transition-all duration-300 text-white ${
                     submitted
                       ? "bg-[#22c55e]"
-                      : "bg-[#0099ff] hover:bg-[#33b1ff] hover:shadow-[0_0_25px_rgba(0,153,255,0.3)] hover:-translate-y-0.5"
+                      : "bg-[#C9A961] hover:bg-[#D4B873] hover:shadow-[0_0_25px_rgba(201,169,97,0.3)] hover:-translate-y-0.5"
                   }`}
                 >
                   {submitted ? "MESSAGE SENT!" : "SEND MESSAGE"}
@@ -128,7 +127,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Instagram"
-                  className="w-12 h-12 rounded-full border border-[#333] flex items-center justify-center text-[#aaaaaa] text-[0.9rem] font-bold transition-all duration-300 hover:border-[#0099ff] hover:text-[#0099ff] hover:shadow-[0_0_15px_rgba(0,153,255,0.3)]"
+                  className="w-12 h-12 rounded-full border border-[#333] flex items-center justify-center text-[#aaaaaa] text-[0.9rem] font-bold transition-all duration-300 hover:border-[#C9A961] hover:text-[#C9A961] hover:shadow-[0_0_15px_rgba(201,169,97,0.3)]"
                 >
                   IG
                 </a>
@@ -137,7 +136,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   title="TikTok"
-                  className="w-12 h-12 rounded-full border border-[#333] flex items-center justify-center text-[#aaaaaa] text-[0.9rem] font-bold transition-all duration-300 hover:border-[#0099ff] hover:text-[#0099ff] hover:shadow-[0_0_15px_rgba(0,153,255,0.3)]"
+                  className="w-12 h-12 rounded-full border border-[#333] flex items-center justify-center text-[#aaaaaa] text-[0.9rem] font-bold transition-all duration-300 hover:border-[#C9A961] hover:text-[#C9A961] hover:shadow-[0_0_15px_rgba(201,169,97,0.3)]"
                 >
                   TK
                 </a>
@@ -145,8 +144,8 @@ const Contact = () => {
             </div>
 
             <div>
-              <h2 className="font-montserrat text-[1.6rem] font-extrabold tracking-[2px] mb-6">
-                FIND <span className="text-[#0099ff]">US</span>
+              <h2 className="font-fraunces text-[1.6rem] font-medium tracking-[-0.01em] mb-6">
+                Find <span className="text-[#C9A961]">us</span>
               </h2>
               <div className="rounded-xl overflow-hidden border border-[#222] map-filter">
                 <iframe

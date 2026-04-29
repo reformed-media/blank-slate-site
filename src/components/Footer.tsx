@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#111111] border-t-[3px] border-[#0099ff] pt-16 px-8 pb-8">
+    <footer className="bg-[#111111] border-t border-[#2A2A2A] pt-16 px-8 pb-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
         <div>
-          <h4 className="font-montserrat text-base font-bold tracking-[2px] mb-5 text-white">
-            QUICK LINKS
+          <h4 className="font-fraunces text-base font-medium tracking-[-0.01em] mb-5 text-white">
+            Quick Links
           </h4>
           <ul className="list-none space-y-2">
             {[
@@ -19,7 +19,7 @@ const Footer = () => {
               <li key={to}>
                 <Link
                   to={to}
-                  className="text-[#aaaaaa] text-[0.9rem] hover:text-[#0099ff] transition-colors duration-300"
+                  className="text-[#aaaaaa] text-[0.9rem] hover:text-[#C9A961] transition-colors duration-300"
                 >
                   {label}
                 </Link>
@@ -29,18 +29,18 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="font-montserrat text-base font-bold tracking-[2px] mb-5 text-white">
-            CONTACT
+          <h4 className="font-fraunces text-base font-medium tracking-[-0.01em] mb-5 text-white">
+            Contact
           </h4>
           <p className="text-[#aaaaaa] text-[0.9rem] mb-2">
-            <a href="tel:9172519317" className="text-[#aaaaaa] hover:text-[#0099ff]">
+            <a href="tel:9172519317" className="text-[#aaaaaa] hover:text-[#C9A961]">
               (917) 251-9317
             </a>
           </p>
           <p className="text-[#aaaaaa] text-[0.9rem] mb-2">
             <a
               href="mailto:info@autospadetailz.com"
-              className="text-[#aaaaaa] hover:text-[#0099ff]"
+              className="text-[#aaaaaa] hover:text-[#C9A961]"
             >
               info@autospadetailz.com
             </a>
@@ -49,8 +49,8 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="font-montserrat text-base font-bold tracking-[2px] mb-5 text-white">
-            HOURS & SOCIAL
+          <h4 className="font-fraunces text-base font-medium tracking-[-0.01em] mb-5 text-white">
+            Hours & Social
           </h4>
           <p className="text-[#aaaaaa] text-[0.9rem] mb-3">
             Open 7 Days a Week
@@ -63,7 +63,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               title="Instagram"
-              className="w-10 h-10 rounded-full border border-[#333] flex items-center justify-center text-[#aaaaaa] text-[0.85rem] font-bold transition-all duration-300 hover:border-[#0099ff] hover:text-[#0099ff] hover:shadow-[0_0_15px_rgba(0,153,255,0.3)]"
+              className="w-10 h-10 rounded-full border border-[#333] flex items-center justify-center text-[#aaaaaa] text-[0.85rem] font-bold transition-all duration-300 hover:border-[#C9A961] hover:text-[#C9A961] hover:shadow-[0_0_15px_rgba(201,169,97,0.3)]"
             >
               IG
             </a>
@@ -72,7 +72,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               title="TikTok"
-              className="w-10 h-10 rounded-full border border-[#333] flex items-center justify-center text-[#aaaaaa] text-[0.85rem] font-bold transition-all duration-300 hover:border-[#0099ff] hover:text-[#0099ff] hover:shadow-[0_0_15px_rgba(0,153,255,0.3)]"
+              className="w-10 h-10 rounded-full border border-[#333] flex items-center justify-center text-[#aaaaaa] text-[0.85rem] font-bold transition-all duration-300 hover:border-[#C9A961] hover:text-[#C9A961] hover:shadow-[0_0_15px_rgba(201,169,97,0.3)]"
             >
               TK
             </a>
