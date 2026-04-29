@@ -4,34 +4,44 @@
 
 @layer base {
   :root {
+    /* Brand tokens */
+    --background-primary: 0 0% 4%;        /* #0A0A0A */
+    --background-secondary: 0 0% 8%;      /* #141414 */
+    --background-tertiary: 0 0% 11%;      /* #1C1C1C */
+    --text-primary: 36 33% 94%;           /* #F5F1EA */
+    --text-secondary: 33 9% 63%;          /* #A8A29A */
+    --accent-brand: 41 47% 59%;           /* #C9A961 */
+    --accent-hover: 40 53% 64%;           /* #D4B873 */
+    --border-subtle: 0 0% 16%;            /* #2A2A2A */
+
     --background: 0 0% 4%;
-    --foreground: 0 0% 100%;
-    --card: 0 0% 7%;
-    --card-foreground: 0 0% 100%;
-    --popover: 0 0% 7%;
-    --popover-foreground: 0 0% 100%;
-    --primary: 204 100% 50%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 9%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 0 0% 9%;
-    --muted-foreground: 0 0% 67%;
-    --accent: 0 0% 9%;
-    --accent-foreground: 0 0% 100%;
+    --foreground: 36 33% 94%;
+    --card: 0 0% 8%;
+    --card-foreground: 36 33% 94%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 36 33% 94%;
+    --primary: 41 47% 59%;
+    --primary-foreground: 0 0% 4%;
+    --secondary: 0 0% 11%;
+    --secondary-foreground: 36 33% 94%;
+    --muted: 0 0% 11%;
+    --muted-foreground: 33 9% 63%;
+    --accent: 41 47% 59%;
+    --accent-foreground: 0 0% 4%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
-    --border: 0 0% 13%;
-    --input: 0 0% 13%;
-    --ring: 204 100% 50%;
+    --border: 0 0% 16%;
+    --input: 0 0% 16%;
+    --ring: 41 47% 59%;
     --radius: 0.5rem;
     --sidebar-background: 0 0% 4%;
-    --sidebar-foreground: 0 0% 67%;
-    --sidebar-primary: 204 100% 50%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 9%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 13%;
-    --sidebar-ring: 204 100% 50%;
+    --sidebar-foreground: 33 9% 63%;
+    --sidebar-primary: 41 47% 59%;
+    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-accent: 0 0% 11%;
+    --sidebar-accent-foreground: 36 33% 94%;
+    --sidebar-border: 0 0% 16%;
+    --sidebar-ring: 41 47% 59%;
   }
 }
 
@@ -41,6 +51,11 @@
   }
   body {
     @apply bg-background text-foreground font-inter overflow-x-hidden;
+  }
+  h1, h2, h3, h4 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
   }
 }
 
