@@ -58,8 +58,8 @@ const Index = () => {
       <section className="hero-bg min-h-screen flex items-center justify-center text-center px-8 relative">
         <div className="absolute inset-0 bg-black/55" />
         <div className="relative z-10 max-w-[900px]">
-          <h1 className="font-inter text-[clamp(3rem,8vw,5rem)] font-black leading-[1.1] tracking-[2px] mb-6">
-            DON'T <span className="text-[#C9A961]">BLEND IN</span> WITH TRAFFIC.
+          <h1 className="font-fraunces text-[clamp(3rem,8vw,5rem)] font-medium leading-[1.1] tracking-[-0.01em] mb-6">
+            Don't <span className="text-[#C9A961]">blend in</span> with traffic.
           </h1>
           <p className="text-[clamp(1rem,2vw,1.15rem)] font-normal italic text-[#aaaaaa] max-w-[600px] mx-auto mb-10 leading-[1.7]">
             Rediscover the brilliance of your car's finish and bring back that showroom sparkle.
@@ -76,11 +76,10 @@ const Index = () => {
       {/* Services */}
       <section className="bg-[#111111] py-20 px-8 max-md:py-14 max-md:px-5">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="font-inter text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold text-center tracking-[2px] mb-4">
-            OUR <span className="text-[#C9A961]">SERVICES</span>
+          <h2 className="font-fraunces text-[clamp(1.8rem,4vw,2.5rem)] font-medium text-center tracking-[-0.01em] mb-4">
+            Our <span className="text-[#C9A961]">services</span>
           </h2>
-          <div className="w-[60px] h-[3px] bg-[#C9A961] mx-auto mb-8 mt-4" />
-          <p className="text-center text-[#aaaaaa] max-w-[600px] mx-auto mb-12">
+          <p className="text-center text-[#aaaaaa] max-w-[600px] mx-auto mt-4 mb-12">
             From full detailing to head-turning customization — we do it all.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -91,7 +90,7 @@ const Index = () => {
               >
                 <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#C9A961] scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                 <span className="text-[2.5rem] block mb-5">{s.icon}</span>
-                <h3 className="font-inter text-[1.2rem] font-bold tracking-[2px] mb-3">
+                <h3 className="font-fraunces text-[1.2rem] font-medium tracking-[-0.01em] mb-3">
                   {s.title}
                 </h3>
                 <p className="text-[#aaaaaa] text-[0.95rem] mb-5 leading-relaxed">{s.desc}</p>
@@ -110,10 +109,9 @@ const Index = () => {
       {/* Why Choose Us */}
       <section className="bg-[#0a0a0a] py-20 px-8 max-md:py-14 max-md:px-5">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="font-inter text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold text-center tracking-[2px] mb-4">
-            WHY <span className="text-[#C9A961]">CHOOSE US</span>
+          <h2 className="font-fraunces text-[clamp(1.8rem,4vw,2.5rem)] font-medium text-center tracking-[-0.01em] mt-4 mb-12">
+            Why <span className="text-[#C9A961]">choose us</span>
           </h2>
-          <div className="w-[60px] h-[3px] bg-[#C9A961] mx-auto mb-8 mt-4" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {whyCards.map((c) => (
               <div
@@ -121,7 +119,7 @@ const Index = () => {
                 className="text-center p-8 rounded-xl bg-[#111111] border border-[#1a1a1a] transition-all duration-300 hover:border-[#333] hover:shadow-[0_5px_30px_rgba(0,0,0,0.3)]"
               >
                 <div className="text-[2.5rem] mb-4">{c.icon}</div>
-                <h3 className="font-inter text-[1.1rem] font-bold tracking-[2px] mb-2">
+                <h3 className="font-fraunces text-[1.1rem] font-medium tracking-[-0.01em] mb-2">
                   {c.title}
                 </h3>
                 <p className="text-[#aaaaaa] text-[0.9rem]">{c.desc}</p>
@@ -134,10 +132,9 @@ const Index = () => {
       {/* Reviews */}
       <section className="bg-[#111111] py-20 px-8 max-md:py-14 max-md:px-5">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="font-inter text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold text-center tracking-[2px] mb-4">
-            WHAT OUR <span className="text-[#C9A961]">CLIENTS SAY</span>
+          <h2 className="font-fraunces text-[clamp(1.8rem,4vw,2.5rem)] font-medium text-center tracking-[-0.01em] mt-4 mb-12">
+            What <span className="text-[#C9A961]">clients are saying</span>
           </h2>
-          <div className="w-[60px] h-[3px] bg-[#C9A961] mx-auto mb-8 mt-4" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {reviews.map((r) => (
               <div
@@ -158,10 +155,9 @@ const Index = () => {
       {/* FAQ */}
       <section className="bg-[#0a0a0a] py-20 px-8 max-md:py-14 max-md:px-5">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="font-inter text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold text-center tracking-[2px] mb-4">
-            FREQUENTLY <span className="text-[#C9A961]">ASKED QUESTIONS</span>
+          <h2 className="font-fraunces text-[clamp(1.8rem,4vw,2.5rem)] font-medium text-center tracking-[-0.01em] mt-4 mb-12">
+            Frequently <span className="text-[#C9A961]">asked questions</span>
           </h2>
-          <div className="w-[60px] h-[3px] bg-[#C9A961] mx-auto mb-8 mt-4" />
           <div className="max-w-[800px] mx-auto space-y-4">
             {faqs.map((faq, i) => (
               <div
@@ -197,8 +193,8 @@ const Index = () => {
       {/* Social CTA */}
       <section className="social-cta-gradient text-center py-20 px-8 border-t border-b border-[#1a1a1a]">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="font-inter text-[clamp(1.6rem,3vw,2.2rem)] font-extrabold tracking-[2px] mb-2">
-            WE'RE ACTIVE ON <span className="text-[#C9A961]">SOCIAL MEDIA</span>
+          <h2 className="font-fraunces text-[clamp(1.6rem,3vw,2.2rem)] font-medium tracking-[-0.01em] mb-2">
+            We're active on <span className="text-[#C9A961]">social media</span>
           </h2>
           <p className="text-[#aaaaaa] mb-8">Follow Our Work</p>
           <div className="flex gap-4 justify-center flex-wrap">
