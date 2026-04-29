@@ -9,10 +9,10 @@ interface BookNowButtonProps {
 const BookNowButton = ({ className, onClick }: BookNowButtonProps) => {
   return (
     <Link
-      to="/schedule"
+      to="/book"
       onClick={onClick}
       className={cn(
-        "inline-flex items-center gap-1.5 px-[26px] py-[14px] bg-[#C9A961] text-white text-[15px] font-medium rounded-[3px] transition-all duration-300 hover:bg-[#D4B873] group",
+        "inline-flex items-center gap-1.5 px-[26px] py-[14px] bg-[#C9A961] text-[#0A0A0A] text-[15px] font-medium rounded-full transition-all duration-300 hover:bg-[#D4B873] group",
         className
       )}
     >
