@@ -12,7 +12,7 @@ const BookNowButton = ({ className, onClick }: BookNowButtonProps) => {
       to="/schedule"
       onClick={onClick}
       className={cn(
-        "inline-flex items-center gap-1.5 px-[26px] py-[14px] bg-[#0099ff] text-white text-[15px] font-medium rounded-[3px] transition-all duration-300 hover:bg-[#0088e6] group",
+        "inline-flex items-center gap-1.5 px-[26px] py-[14px] bg-[#C9A961] text-white text-[15px] font-medium rounded-[3px] transition-all duration-300 hover:bg-[#D4B873] group",
         className
       )}
     >
